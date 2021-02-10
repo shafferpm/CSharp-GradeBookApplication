@@ -19,13 +19,13 @@ namespace GradeBook.GradeBooks
                 throw new InvalidOperationException();
             }
 
-            if (averageGrade >= 90)
+            if (averageGrade >= 80)
                 return 'A';
-            else if (averageGrade >= 80)
+            else if (averageGrade <= 80 && averageGrade >= 60)
                 return 'B';
-            else if (averageGrade >= 70)
+            else if (averageGrade <= 60 && averageGrade >= 40)
                 return 'C';
-            else if (averageGrade >= 60)
+            else if (averageGrade <= 40 && averageGrade >= 20)
                 return 'D';
             else
                 return 'F';
