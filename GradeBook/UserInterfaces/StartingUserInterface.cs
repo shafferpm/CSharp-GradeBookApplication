@@ -44,7 +44,7 @@ namespace GradeBook.UserInterfaces
             var type = parts[2];
 
             var weighted = false;
-            if (parts[4] != "true")
+            if (parts[3] != "true")
             {
                 weighted = true;
             }
